@@ -11,7 +11,7 @@ export class HttpClientService {
     const token = localStorage.getItem('authToken');
     let headers = new HttpHeaders();
     if (token) {
-      headers = headers.set('Authorization', `Bearer ${token}`);
+      headers = headers.set('Authorization', `${token}`);
     }
     return headers;
   }
