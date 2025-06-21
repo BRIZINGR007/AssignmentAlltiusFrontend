@@ -1,0 +1,15 @@
+<header class="navbar fixed-top bg-app-theme">
+    <div class="container-fluid gap-2">
+        <span class="text-white me-auto ms-2 fs-5 fw-bold text-uppercase">
+            Welcome , {{ userName }}
+        </span>
+
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <button class="nav-link text-white" aria-label="User Profile" (click)="LogOut()">
+                    <i class="bi bi-box-arrow-in-right fs-3 me-3"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+</header>
